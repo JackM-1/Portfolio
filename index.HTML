@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack Mackenzie — UI/UX Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav>
+  <div class="nav-logo">jackmack.dev</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
+    <a href="#work">Work</a>
+    <a href="https://www.linkedin.com/in/jack-mackenzie-/" target="_blank">LinkedIn ↗</a>
+    <a href="https://github.com/JackM-1" target="_blank">GitHub ↗</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: name + typewriter -->
+      <div class="col-lg-6">
+        <h1 class="hero-name">Jack<br>Mackenzie</h1>
+        <p class="hero-role">
+          <span id="typewriter"></span><span class="cursor"></span>
+        </p>
+      </div>
+      <!-- Right: bio + buttons -->
+      <div class="col-lg-6">
+        <p class="hero-bio">
+          I enjoy building things that involve new AI tools, modern web tech, and good UX.
+          Currently studying how to design interfaces that are functional and also 
+          enjoyable to use.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#about" class="btn-accent">About Me</a>
+          <a href="#work" class="btn-outline">My Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <p class="section-label">01 — About</p>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="section-divider"></div>
+
+    <div class="row align-items-start g-5">
+      <div class="col-md-3 d-flex justify-content-center justify-content-md-start fade-in">
+        <img src="images/profile.png" alt="Jack Mackenzie" class="about-avatar" />
+      </div>
+
+      <div class="col-md-9 fade-in">
+        <p style="font-size:1.05rem; font-weight:300;">
+          Hey! I'm Jack. I'm a second-year Software Engineering student at the
+          <strong style="color:var(--heading)">University of Ottawa</strong>, and I care about
+          building things that actually work well for the people who use them.
+        </p>
+        <p style="color:var(--muted);">
+          Beyond code, I'm curious by nature, I'll read up on the latest news in quantum computing or new technologies,
+          read books, or workout.
+        </p>
+
+        <!-- Education -->
+        <div class="about-block">
+          <p class="mono mb-2" style="color:var(--accent);">// Education</p>
+          <p style="margin:0;"><strong style="color:var(--heading)">BASc. Software Engineering</strong> — University of Ottawa <span style="color:var(--muted);">· 2024–2028</span></p>
+        </div>
+
+        <!-- Work history -->
+        <div class="about-block">
+          <p class="mono mb-2" style="color:var(--accent);">// Experience</p>
+          <p style="margin:0 0 0.25rem;"><strong style="color:var(--heading)">AI Software Developer Intern</strong> — Correctional Service Canada <span style="color:var(--muted);">· Jan–Apr 2026</span></p>
+          <p style="color:var(--muted); font-size:0.9rem; margin:0 0 1rem;">National AI platform rollout reaching 10,000+ employees. Built Python feedback pipelines, PII protection, TypeScript features, and CI/CD automation on Azure.</p>
+          <p style="margin:0 0 0.25rem;"><strong style="color:var(--heading)">VP of Web Development</strong> — UONotes <span style="color:var(--muted);">· 2025–present</span></p>
+          <p style="color:var(--muted); font-size:0.9rem; margin:0;">Led full architectural overhaul of a student note-sharing platform — migrated to Next.js 15, Supabase, and Cloudflare R2, and established team dev standards.</p>
+        </div>
+
+        <!-- Links -->
+        <div class="about-block">
+          <p class="mono mb-2" style="color:var(--accent);">// Find me</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="https://www.linkedin.com/in/jack-mackenzie-/" target="_blank" class="btn-outline" style="padding:0.4rem 1.1rem; font-size:0.72rem;">LinkedIn ↗</a>
+            <a href="https://github.com/JackM-1" target="_blank" class="btn-outline" style="padding:0.4rem 1.1rem; font-size:0.72rem;">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW I WORK ── -->
+<section id="process">
+  <div class="container">
+    <p class="section-label">02 — Process</p>
+    <h2 class="section-title">How I Work</h2>
+    <div class="section-divider"></div>
+
+    <div class="row mb-5 fade-in">
+      <div class="col-lg-7">
+        <p style="font-size:1.05rem; font-weight:300; margin-bottom:1rem;">
+          I already have experience designing and building modern web applications, especially
+          on the frontend side, but
+          <strong style="color:var(--heading)">SEG3125, Analysis and Design of User Interfaces</strong>
+          at uOttawa has helped me better understand the theory behind strong design decisions.
+        </p>
+        <p style="color:var(--muted);">
+          Through the course, I've been learning more about visual communication,
+          usability, interaction design, and user-centred thinking using resources like the
+          <a href="https://www.nngroup.com/articles/principles-visual-design/" target="_blank">
+          Nielsen Norman Group's visual design principles</a>.
+          It's helped me think beyond just making interfaces functional, and focus more on
+          making them intuitive, clear, and enjoyable to use.
+        </p>
+        <p style="color:var(--muted);">
+          My workflow is usually iterative: I start by understanding the problem and who the
+          product is for, move into wireframes or architecture sketches, build incrementally,
+          and refine based on feedback and usability considerations.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-3 fade-in">
+        <div class="work-card">
+          <div class="work-card-num">01</div>
+          <h4>Understand</h4>
+          <p>Define the problem and who it's for. No design work starts until the goal is unambiguous.</p>
+        </div>
+      </div>
+      <div class="col-md-3 fade-in">
+        <div class="work-card">
+          <div class="work-card-num">02</div>
+          <h4>Sketch</h4>
+          <p>Low-fidelity wireframes or architecture diagrams. Speed over polish at this stage.</p>
+        </div>
+      </div>
+      <div class="col-md-3 fade-in">
+        <div class="work-card">
+          <div class="work-card-num">03</div>
+          <h4>Build</h4>
+          <p>Implement incrementally. Keep it reviewable with small PRs, clear commits, real feedback loops.</p>
+        </div>
+      </div>
+      <div class="col-md-3 fade-in">
+        <div class="work-card">
+          <div class="work-card-num">04</div>
+          <h4>Refine</h4>
+          <p>Evaluate against the original goal. Fix what's off, cut what's noise, ship what works.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <p class="mono mb-3" style="color:var(--muted);">// Tools I work with</p>
+      <div class="tool-grid">
+        <div class="tool-item">Next.js</div>
+        <div class="tool-item">TypeScript</div>
+        <div class="tool-item">HTML / CSS</div>
+        <div class="tool-item">JavaScript</div>
+        <div class="tool-item">Selenium</div>
+        <div class="tool-item">Bootstrap 5</div>
+        <div class="tool-item">Supabase</div>
+        <div class="tool-item">Azure DevOps</div>
+        <div class="tool-item">GitHub</div>
+        <div class="tool-item">Figma</div>
+        <div class="tool-item">Python</div>
+        <div class="tool-item">VS Code</div>
+        <div class="tool-item">Vercel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CASE STUDIES ── -->
+<section id="work">
+  <div class="container">
+    <p class="section-label">03 — Case Studies</p>
+    <h2 class="section-title">My Work</h2>
+    <div class="section-divider"></div>
+    <p class="fade-in" style="color:var(--muted); max-width:500px; margin-bottom:3rem;">
+      Four design projects built throughout SEG3125.
+    </p>
+
+    <div class="row g-4">
+      <!-- Design 1: Service Website -->
+      <div class="col-md-6 fade-in">
+        <div class="case-card">
+          <a href="coming-soon.html" class="case-link">
+            <img src="images/dentist.png" alt="Service website placeholder" class="case-img">
+            <div class="case-content">
+              <p class="case-num">DESIGN 01</p>
+              <p class="case-title">Service Website</p>
+              <p class="case-type">UI Design · HTML/CSS · Bootstrap 5</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Design 2: Memory Game -->
+      <div class="col-md-6 fade-in">
+        <div class="case-card">
+          <a href="coming-soon.html" class="case-link">
+            <img src="images/memory.png" alt="Memory game placeholder" class="case-img">
+            <div class="case-content">
+              <p class="case-num">DESIGN 02</p>
+              <p class="case-title">Memory Game</p>
+              <p class="case-type">Interaction Design · JavaScript · React</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Design 3: E-Commerce Site -->
+      <div class="col-md-6 fade-in">
+        <div class="case-card">
+          <a href="coming-soon.html" class="case-link">
+            <img src="images/ecom.png" alt="E-commerce site placeholder" class="case-img">
+            <div class="case-content">
+              <p class="case-num">DESIGN 03</p>
+              <p class="case-title">E-Commerce Site</p>
+              <p class="case-type">UX Design · React · Information Architecture</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Design 4: Analytics Dashboard -->
+      <div class="col-md-6 fade-in">
+        <div class="case-card">
+          <a href="coming-soon.html" class="case-link">
+            <img src="images/dashboard.png" alt="Analytics dashboard placeholder" class="case-img">
+            <div class="case-content">
+              <p class="case-num">DESIGN 04</p>
+              <p class="case-title">Analytics Dashboard</p>
+              <p class="case-type">Data Visualization · Dashboard Design · React</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
